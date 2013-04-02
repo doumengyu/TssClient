@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@drawable/list_select"
+        android:drawingCacheQuality="high" >
+
+        <TextView
+            android:id="@+id/coursename1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:adjustViewBounds="true"
+            android:padding="2dip"
+            android:textColor="@color/topictitle"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lastupdated1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/coursename1"
+            android:layout_marginBottom="5dip"
+            android:gravity="center_vertical"
+            android:paddingRight="8dip"
+            android:textColor="@color/id"
+            android:textSize="12sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/instructor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/coursename1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dip"
+            android:ellipsize="marquee"
+            android:paddingLeft="2dip"
+            android:textColor="@color/time"
+            android:textSize="12sp" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

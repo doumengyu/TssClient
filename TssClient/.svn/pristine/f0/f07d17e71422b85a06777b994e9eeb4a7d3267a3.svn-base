@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/head" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dip" >
+
+        <EditText
+            android:id="@+id/UserNameEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UserName"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/bg_input_panel"
+            android:hint="@string/UserNameHint"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:singleLine="true" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UserNameEditText"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/Password"
+            android:textColor="@color/black" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/PasswordEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Password"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/bg_input_panel"
+            android:hint="@string/PasswordHint"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:singleLine="true" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30dip"
+            android:text="@string/copyright" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/UserNameEditText"
+            android:layout_alignParentTop="true"
+            android:text="@string/UserName"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/rememberpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/PasswordEditText"
+            android:layout_below="@+id/PasswordEditText"
+            android:layout_marginTop="18dp"
+            android:button="@drawable/btn_check"
+            android:text="@string/rememberpassword"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/LoginButton"
+            android:layout_width="80dip"
+            android:layout_height="35dip"
+            android:layout_alignLeft="@+id/rememberpassword"
+            android:layout_alignRight="@+id/PasswordEditText"
+            android:layout_below="@+id/rememberpassword"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/buttonbackground"
+            android:gravity="center"
+            android:text="@string/loginin" />
+
+    </RelativeLayout>
+
+</LinearLayout>

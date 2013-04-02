@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="app_name">TSS</string>
+    <string name="UserName">UserName：</string>
+    <string name="Password">Password：</string>
+    <string name="copyright">Copyright 2013 Software Institute,NJU</string>
+    <string name="loginin">Login</string>
+    <string name="rememberpassword">Remember me</string>
+    <string name="automaticlogin">Auto Login</string>
+    <string name="back">Back</string>
+    <string name="selectborad">选择板面:</string>
+    <string name="loading">Loading…</string>
+    <string name="inputhint">请输入板块名称</string>
+    <string name="foottopic1">上一页</string>
+    <string name="foottopic2">下一页</string>
+    <string name="foottopic3">模式切换</string>
+    <string name="foottopic4">更多</string>
+    <string name="newpost">发表文章</string>
+    <string name="changeaccount">切换帐号</string>
+    <string name="reload">重新载入</string>
+    <string name="retop">回到十大</string>
+    <string name="fav">收藏此板</string>
+    <string name="gotofav">收藏夹</string>
+    <string name="replytitle">文章标题:</string>
+    <string name="replycontent">文章内容:</string>
+    <string name="tab1">MyCourse</string>
+    <string name="tab2">CourseList</string>
+    <string name="tab3">Homework</string>
+    <string name="tab4">Alarm</string>
+    <string name="tabcourseinfo">Announcement</string>
+    <string name="tabslides">Slides</string>
+    <string name="tabhomework">Homework</string>
+    <string name="tabforum">Info</string>
+    <string name="UserNameHint">USERNAME HERE</string>
+    <string name="PasswordHint">PASSWORD PLEASE</string>
+    <string name="SearchHint">COURSE NAME</string>
+    <string name="select">Please Select Semester</string>
+    <string name="startPicDesc">First Screen Loading Picture</string>
+    <string name="slidesIconDesc">Slide Icon</string>
+    <string name="confirm">知道了</string>
+    <string name="alarm">Alarm</string>
+
+</resources>

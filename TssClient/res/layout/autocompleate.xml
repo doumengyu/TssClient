@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:drawingCacheQuality="high" >
+
+        <AutoCompleteTextView
+            android:id="@+id/boads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@+id/selectboard"
+            android:background="@drawable/bg_input_panel"
+            android:capitalize="none"
+            android:dropDownSelector="@drawable/list_select"
+            android:dropDownVerticalOffset="5dip"
+            android:dropDownWidth="fill_parent"
+            android:hint="@string/inputhint"
+            android:singleLine="true"
+            android:textColor="@color/topictitle" >
+        </AutoCompleteTextView>
+
+        <Button
+            android:id="@+id/gotoboard"
+            android:layout_width="50dip"
+            android:layout_height="35dip"
+            android:layout_alignBottom="@+id/boads"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/boads"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/buttonbackground"
+            android:text="Go" >
+        </Button>
+
+        <TextView
+            android:id="@+id/selectboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:text="选择板面："
+            android:textColor="@color/topictitle" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

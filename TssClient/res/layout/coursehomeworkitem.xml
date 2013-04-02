@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/list_select"
+        android:drawingCacheQuality="high" >
+
+        <TextView
+            android:id="@+id/assignmentno"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:adjustViewBounds="true"
+            android:padding="2dip"
+            android:textColor="@color/topictitle"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/duedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/assignmentno"
+            android:layout_below="@+id/assignmentno"
+            android:layout_marginBottom="5dip"
+            android:gravity="center_vertical"
+            android:paddingRight="8dip"
+            android:textColor="@color/id"
+            android:textSize="14sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/assignmentno"
+            android:layout_below="@+id/duedate"
+            android:layout_marginBottom="1dip"
+            android:adjustViewBounds="true"
+            android:paddingLeft="2dip"
+            android:textColor="@color/time"
+            android:textSize="16sp" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

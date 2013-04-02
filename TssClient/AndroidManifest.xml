@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.icecream.tssclient.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+    
+    
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name=".Tss"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ContainerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name="LoginActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name="LoginingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name="CourseListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name="MyCourseListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name="MyHomeworkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name="AlarmManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name="CourseContainerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name="CourseAnnouncementActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name="CourseSlidesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name="CourseHomeworkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name="CourseInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity android:name=".AlarmActivity" />
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:process=":remote" />
+    </application>
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.icecream.tssclient.activity" />
+
+</manifest>
